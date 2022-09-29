@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
+    <meta name="format-detection" content="telephone=no">
+    <title> SMS MANAGEMENT </title>
+    <!-- Favicon icon -->
+    <link rel="stylesheet" href="../vendor/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="../vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/data_table.css">
+    <link rel="stylesheet" href="../css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../multiselect/assests/jquery.multiselect.css">
+    <link rel="stylesheet" type="text/css" href="../multiselect/assests/jquery.multiselect.filter.css">
+    <link rel="stylesheet" type="text/css" href="../multiselect/assests/style.css">
+    <link rel="stylesheet" type="text/css" href="../multiselect/assests/prettify.css">
+    <link rel="stylesheet" type="text/css" href="../multiselect/assests/jquery-ui.css">
+
+
+    <link href="../css/back-bone.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/11table.css">
+
+</head>
+
+<body>
+
+    <!--*******************
+    Preloader start
+********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+    Preloader end
+********************-->
+
+    <!--**********************************
+    Main wrapper start
+***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+        Nav header start
+    ***********************************-->
+        <div class="nav-header">
+            <a href="../index.html" class="brand-logo">
+                <h4>SMS MANAGEMENT</h4>
+            </a>
+
+
+        </div>
+        <!--**********************************
+        Nav header end
+    ***********************************-->
+
+        <!--**********************************
+        Header start
+    ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-lg-between menu-bar">
+                        <div class="nav-control">
+                            <div class="hamburger">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-container">
+                        <form method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Search">
+                            <label class="button searchbutton" for="searchright">
+                                <img class="simg " src="../images/Icon/Search Icon.svg" data-bs-placement="bottom"
+                                    data-bs-toggle="tooltip" title="Search">
+                            </label>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+        <!--**********************************
+        Sidebar start
+    ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+                <div class="main-profile">
+                    <a href="../14.Profile/profile.html">
+                        <div class="image-bx">
+                            <img src="../images/Icon/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="">
+                        </div>
+                        <h5 class="name"><span class="font-weight-bold">SMS Management Admin</span></h5>
+                    </a>
+                    <p class="email font-weight-bold">Last Login</p>
+                    <div class="d-flex justify-content-between p-2 font-weight-bold">
+                        <div>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>Wed,04-Aug-2021</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-clock"></i>
+                            <span>04:50</span>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <ul class="metismenu" id="menu">
+                    <li><a class=" ai-icon" aria-expanded="false" href="../index.html">
+                            <img src="../images/Icon/dashboard.png" class="menu-icon">
+                            <span class="nav-text ml-2">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class=" "><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <img src="../images/Icon/B Master.svg" class="menu-icon" alt="">
+                            <span class="nav-text ml-2">User Role Master</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li class="">
+                                <a href="../Master/companylisting.html">
+                                    <img src="../images/Icon/B Company.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2 ">Company </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../Master/department_listing.html">
+                                    <img src="../images/Icon/B Department.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Department</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../Master/designationlisting.html">
+                                    <img src="../images/Icon/B Designation.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Designation</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a class=" ai-icon" aria-expanded="false" href="../4.User-role/4.1_main-menu.html">
+                            <img src="../images/Icon/User%20Role%20Permission.png" class="menu-icon">
+                            <span class="nav-text ml-2">User Role Permission</span>
+                        </a>
+                    </li>
+                    <li><a class=" ai-icon" aria-expanded="false" href="../5.Set -SMS-Price/5.1.set-sms-price.html">
+                            <img src="../images/Icon/Set%20SMS%20Price.svg" class="menu-icon">
+                            <span class="nav-text ml-2">Set SMS Price</span>
+                        </a>
+                    </li>
+                    <li><a class=" ai-icon" aria-expanded="false"
+                            href="../6.SMS-Channel-Change/6.1.sms-channel-change-listing.html">
+                            <img src="../images/Icon/SMS%20Channel%20Change.svg" class="menu-icon">
+                            <span class="nav-text ml-2">SMS Channel Change</span>
+                        </a>
+                    </li>
+                    <li><a class=" ai-icon" aria-expanded="false"
+                            href="../7.OK $ SMS Configuration/7.1.ok$-sms-configuration.html">
+                            <img src="../images/Icon/OK$%20SMS%20Configuration.svg" class="menu-icon">
+                            <span class="nav-text ml-2">OK$ SMS Configuration</span>
+                        </a>
+                    </li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <img src="../images/Icon/Other%20SMS.svg" class="menu-icon" alt="">
+                            <span class="nav-text ml-2">Other SMS</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="../8.Other_SMS/8.1_Other_SMS/8.1.1_main_menu.html"><img
+                                        src="../images/Icon/Send%20Other%20SMS.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Send Other SMS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../8.Other_SMS/8.2_Sugar_Mill/8.2.1_sugar-mill_mmenu.html"><img
+                                        src="../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Sugar Mill Factory </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../8.Other_SMS/8.3_schedule_view_detail/8.3.0_schedule_view_listing.html"><img
+                                        src="../images/Icon/Schedule%20View%20Detail.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Schedule View Detail</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../8.Other_SMS/8.4_custom_view_detail/8.4.0_custom_view_listing.html"><img
+                                        src="../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Custom View Detail</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <img src="../images/Icon/Email.svg" class="menu-icon"></img>
+                            <span class="nav-text ml-2">Email</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="../9.Email/9.1.email_configuration_listing.html">
+                                    <img src="../images/Icon/Email%20Configuration.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">E-mail Configuration</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../9.Email/9.4.indiviual_email_listing.html">
+                                    <img src="../images/Icon/Individual%20E-mail.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Individual E-mail</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../9.Email/9.6.bulk_email_listing.html">
+                                    <img src="../images/Icon/Bulk%20Email.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Bulk E-mail</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <img src="../images/Icon/SMS%20Stop.svg" class="menu-icon" alt="">
+                            <span class="nav-text ml-2">SMS Stop</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="../10.SMSstop/10.1BulkSMSstop.html">
+                                    <img src="../images/Icon/Bulk%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Bulk SMS Stop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../10.SMSstop/10.3Individualstop.html">
+                                    <img src="../images/Icon/Individual%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Individual SMS Stop</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mm-active active-nav-link"><a class=" ai-icon" aria-expanded="false"
+                            href="../11.Whitelist/11.1smslisting.html">
+                            <img src="../images/Icon/SMS%20White%20List.svg" class="menu-icon">
+                            <span class="nav-text ml-2">SMS White List</span>
+                        </a>
+                    </li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <img src="../images/Icon/Report.svg" class="menu-icon" alt="">
+                            <span class="nav-text ml-2">Report</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="../12.Report/12.1_SMS_Change_report/12.0_sms_channel.html">
+                                    <img src="../images/Icon/SMS%20Channel%20Change%20Report.svg" class="menu-icon"
+                                        alt="">
+                                    <span class=" ml-2">SMS Channel Change Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.2_Other_SMS_Bulk/12.2.0_other_sms_channel_report.html">
+                                    <img src="../images/Icon/Other%20SMS%20Bulk%20File%20View.svg" class="menu-icon"
+                                        alt="">
+                                    <span class=" ml-2">Other SMS Bulk File View</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.3_On_Net/12.3.0_on-net-mmenu.html">
+                                    <img src="../images/Icon/On%20Net%20Report.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">On-Net Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.4_Off-net/12.4.0_off-net.html">
+                                    <img src="../images/Icon/Off%20Net%20Report.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Off-Net Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.5_Operator-Base-Report/12.5.0_operator-base-mmenu.html">
+                                    <img src="../images/Icon/Operator%20Base%20Report.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Operator Base Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.6_Company-Base-Report/12.6.0_company-base-mmenu.html">
+                                    <img src="../images/Icon/Company%20Base%20SMS%20Report.svg" class="menu-icon"
+                                        alt="">
+                                    <span class=" ml-2">Company Base Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../12.Report/12.7_Custom-sms-report/12.7.0_custom-sms-mmenu.html">
+                                    <img src="../images/Icon/Custom%20SMS%20Report.svg" class="menu-icon" alt="">
+                                    <span class=" ml-2">Custom SMS Report</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class=" ai-icon" aria-expanded="false" href="../13.ChangePassword/13.changepass.html">
+                            <img src="../images/Icon/Change Password.svg" class="menu-icon">
+                            <span class="nav-text ml-2">Change Password</span>
+                        </a>
+                    </li>
+
+                    <li><a class=" ai-icon" aria-expanded="false" data-toggle="modal" data-target="#logoutFormModal">
+                            <img src="../images/Icon/logout.png" class="menu-icon">
+                            <span class="nav-text ml-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Modal: modalConfirmDelete-->
+        <div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-notify modal-danger" role="document">
+                <!--Content-->
+                <div class="modal-content modal-success logoutModalContent text-center">
+                    <!--Body-->
+                    <div class="modal-body">
+                        <img src="../images/Icon/Search.svg" width="10%" alt="">
+                        <br><br><br>
+                        <h4 style="font-weight: bold;">Do you want to logout?</h4>
+                        <br><br>
+                        <div class="d-flex justify-content-center">
+
+                            <a href="../1.login_&_Forget/1.login.html"><button class="btn yes-btn mr-3">Yes</button></a>
+                            <button class="btn no-btn ml-3" data-dismiss="modal">No</button>
+
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--**********************************
+        Sidebar end
+    ***********************************-->
+
+        <!--**********************************
+        Content body start
+    ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="form-head mb-sm-3 m-3 d-flex flex-wrap align-items-center">
+                    <h3 class="font-w600 title m-2 mr-auto ">SMS White List Listing</h3>
+                    <div>
+                        <a href="11.2SMSWhitelist.html"><img class="nav-menu-icon"
+                                src="../images/active-icon/Filter.svg" alt="" data-bs-placement="bottom"
+                                data-bs-toggle="tooltip" title="Filter">
+                        </a>
+                        <img class="nav-menu-icon" src="../images/active-icon/excel%20download%20.svg" alt=""
+                            data-bs-placement="bottom" data-bs-toggle="tooltip" title="Download">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive py-3 ">
+                            <table id="user-role-table" class="table table-responsive text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="width: 300px">Stop Type</th>
+                                        <th scope="col" style="width: 300px">Account Type</th>
+                                        <th scope="col" style="width: 300px">SMS Service Type</th>
+                                        <th scope="col" style="width: 300px">Operator Name</th>
+                                        <th scope="col" style="width: 300px">OS Type</th>
+                                        <th scope="col" style="width: 300px">OS Version</th>
+                                        <th scope="col" style="width: 300px">OK$ App Version</th>
+                                        <th scope="col" style="width: 300px">Build Number</th>
+                                        <th scope="col" style="width: 300px">Number of Account Count</th>
+                                        <th scope="col" style="width: 300px">Mobile Number</th>
+                                        <th scope="col" style="width: 300px">Date & Time</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Personal</td>
+                                        <td>Gift Card</td>
+                                        <td>MECTEL</td>
+                                        <td>Android</td>
+                                        <td>Android 10</td>
+                                        <td>1.25.9</td>
+                                        <td>105</td>
+                                        <td>70</td>
+                                        <td>+95 258461578 </td>
+                                        <td>Fri,04-Feb-2021,11:34:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Merchant</td>
+                                        <td>Electricity Bill</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.26.1</td>
+                                        <td>108</td>
+                                        <td>30</td>
+                                        <td>+95 254895584</td>
+                                        <td>Thu,05-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destination</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Offer</td>
+                                        <td>MPT</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.27.4</td>
+                                        <td>104</td>
+                                        <td>40</td>
+                                        <td>+95 09421000 232</td>
+                                        <td>Fri,01-Feb-2021,10:48:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>E-Cupon</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.25.9</td>
+                                        <td>102</td>
+                                        <td>80</td>
+
+                                        <td>+95 0942100218</td>
+                                        <td>Tue,08-Feb-2021,12:41:39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Personal</td>
+                                        <td>Pay To</td>
+                                        <td>MPT</td>
+                                        <td>IOS</td>
+                                        <td>IOS 7</td>
+                                        <td>IOS 1.25.9</td>
+                                        <td>101</td>
+                                        <td>10</td>
+                                        <td>+95 09421000251</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Destination</td>
+                                        <td>Merchant</td>
+                                        <td>Top Up</td>
+                                        <td>Telenor</td>
+                                        <td>Android</td>
+                                        <td>Android 8</td>
+                                        <td>1.26.1</td>
+                                        <td>107</td>
+                                        <td>20</td>
+                                        <td>+95 09421000214</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>Advance Merchant</td>
+                                        <td>Data Plan</td>
+                                        <td>OOREDOO</td>
+                                        <td>IOS</td>
+                                        <td>IOS 9</td>
+                                        <td>1.27.1</td>
+                                        <td>103</td>
+                                        <td>50</td>
+                                        <td>+95 09254135581</td>
+                                        <td>Tue,01-Feb-2021, 12:41:39</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+        Content body end
+    ***********************************-->
+    </div>
+    <!--**********************************
+    Scripts
+***********************************-->
+    <script src="../vendor/global/global.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../vendor/data_table/jquery.dataTables.min.js"></script>
+    <script src="../vendor/data_table/dataTables.bootstrap4.min.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/daterangepicker.js"></script>
+
+    <script src="../js/custom.min.js"></script>
+    <script src="../js/deznav-init.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

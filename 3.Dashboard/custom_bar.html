@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+    <meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+    <title> SMS MANAGEMENT </title>
+    <!-- Favicon icon -->
+	<link rel="stylesheet" href="../vendor/fontawesome-free-5.15.4-web/css/all.css">
+	<link rel="stylesheet" href="../vendor/feather-icons-web/feather.css">
+	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+
+	<link rel="stylesheet" href="../css/daterangepicker.css">
+
+	<link rel="stylesheet" type="text/css" href="../vendor/multiselect/assests/jquery.multiselect.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/multiselect/assests/4.2-jquery.multiselect.filter.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/multiselect/assests/style.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/multiselect/assests/prettify.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/multiselect/assests/4.2-jquery-ui.css">
+
+	<link rel="stylesheet" href="dash_css/dashboard.css">
+    <link href="../css/back-bone.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <h4>SMS MANAGEMENT</h4>
+            </a>
+
+
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-lg-between menu-bar">
+						<div class="nav-control">
+							<div class="hamburger">
+								<i class="fa fa-bars"></i>
+							</div>
+						</div>
+                    </div>
+
+                </nav>
+			</div>
+        </div>
+
+		 <!--Modal: modalConfirmDelete-->
+		 <div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		 aria-hidden="true">
+		 <div class="modal-dialog modal-dialog-centered modal-lg modal-notify modal-danger" role="document">
+		 <!--Content-->
+		 <div class="modal-content modal-success logoutModalContent text-center logoutmodal">
+			 <!--Body-->
+			 <div class="modal-body">
+				 <img src="../images/Icon/Search.svg" width="10%" alt="">
+				 <br><br><br>
+				 <h4 style="font-weight: bold;">Do you want to logout?</h4>
+				 <br><br>
+				 <div class="d-flex justify-content-center">
+
+					<a href="../1.login_&_Forget/1.login.html"><button class="btn yes-btn mr-3">Yes</button></a>
+					<button class="btn no-btn ml-3" data-dismiss="modal" >No</button>
+
+				 </div>
+				 <br>
+			 </div>
+
+		 </div>
+		 <!--/.Content-->
+		 </div>
+	 	</div>
+
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<div class="main-profile">
+					<a href="../14.Profile/profile.html">
+						<div class="image-bx">
+							<img src="../images/Icon/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="">
+						</div>
+						<h5 class="name"><span class="font-weight-bold">SMS Management Admin</span></h5>
+					</a>
+					<p class="email font-weight-bold">Last Login</p>
+					<div class="d-flex justify-content-between p-2 font-weight-bold">
+						<div>
+							<i class="fa fa-calendar-alt"></i>
+							<span>Wed,04-Aug-2021</span>
+						</div>
+						<div>
+							<i class="fa fa-clock"></i>
+							<span>04:50</span>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<ul class="metismenu" id="menu">
+                    <li  class="mm-active active-nav-link"><a class=" ai-icon" aria-expanded="false">
+						<img src="../images/Icon/Dashboard.svg" class="menu-icon">
+							<span class="nav-text ml-2">Dashboard</span>
+						</a>
+                    </li>
+					<li class=" "><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<img src="../images/Icon/B Master.svg" class="menu-icon" alt="">
+						<span class="nav-text ml-2">User Role Master</span>
+					</a>
+						<ul aria-expanded="false">
+							<li class="">
+								<a href="../Master/companylisting.html">
+									<img src="../images/Icon/B Company.svg" class="menu-icon" alt="">
+									<span class=" ml-2 ">Company </span>
+								</a>
+							</li>
+							<li>
+								<a href="../Master/department_listing.html">
+									<img src="../images/Icon/B Department.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Department</span>
+								</a>
+							</li>
+							<li>
+								<a href="../Master/designationlisting.html">
+									<img src="../images/Icon/B Designation.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Designation</span>
+								</a>
+							</li>
+
+						</ul>
+					</li>
+					<li><a class=" ai-icon" aria-expanded="false" href="../4.User-role/4.1_main-menu.html">
+						<img src="../images/Icon/User%20Role%20Permission.png" class="menu-icon">
+						<span class="nav-text ml-2">User Role Permission</span>
+					</a>
+					</li>
+					<li><a class=" ai-icon" aria-expanded="false" href="../5.Set -SMS-Price/5.1.set-sms-price.html">
+						<img src="../images/Icon/Set%20SMS%20Price.svg" class="menu-icon">
+						<span class="nav-text ml-2">Set SMS Price</span>
+					</a>
+					</li>
+					<li><a class=" ai-icon" aria-expanded="false" href="../6.SMS-Channel-Change/6.1.sms-channel-change-listing.html">
+						<img src="../images/Icon/SMS%20Channel%20Change.svg" class="menu-icon">
+						<span class="nav-text ml-2">SMS Channel Change</span>
+					</a>
+					</li>
+					<li><a class=" ai-icon" aria-expanded="false" href="../7.OK $ SMS Configuration/7.1.ok$-sms-configuration.html">
+						<img src="../images/Icon/OK$%20SMS%20Configuration.svg" class="menu-icon">
+						<span class="nav-text ml-2">OK$ SMS Configuration</span>
+					</a>
+					</li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<img src="../images/Icon/Other%20SMS.svg" class="menu-icon" alt="">
+							<span class="nav-text ml-2">Other SMS</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li>
+								<a href="../8.Other_SMS/8.1_Other_SMS/8.1.1_main_menu.html"><img src="../images/Icon/Send%20Other%20SMS.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Send Other SMS</span>
+								</a>
+							</li>
+                            <li>
+								<a href="../8.Other_SMS/8.2_Sugar_Mill/8.2.1_sugar-mill_mmenu.html"><img src="../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Sugar Mill Factory </span>
+								</a>
+							</li>
+							<li>
+								<a href="../8.Other_SMS/8.3_schedule_view_detail/8.3.0_schedule_view_listing.html"><img src="../images/Icon/Schedule%20View%20Detail.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Schedule View Detail</span>
+								</a>
+							</li>
+							<li>
+								<a href="../8.Other_SMS/8.4_custom_view_detail/8.4.0_custom_view_listing.html"><img src="../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Custom View Detail</span>
+								</a>
+							</li>
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<img src="../images/Icon/Email.svg" class="menu-icon"></img>
+							<span class="nav-text ml-2">Email</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li>
+								<a href="../9.Email/9.1.email_configuration_listing.html">
+									<img src="../images/Icon/Email%20Configuration.svg" class="menu-icon" alt="">
+									<span class=" ml-2">E-mail Configuration</span>
+								</a>
+							</li>
+                            <li>
+								<a href="../9.Email/9.4.indiviual_email_listing.html">
+									<img src="../images/Icon/Individual%20E-mail.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Individual E-mail</span>
+								</a>
+							</li>
+                            <li>
+								<a href="../9.Email/9.6.bulk_email_listing.html">
+									<img src="../images/Icon/Bulk%20Email.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Bulk E-mail</span>
+								</a>
+							</li>
+                        </ul>
+                    </li>
+
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<img src="../images/Icon/SMS%20Stop.svg" class="menu-icon" alt="">
+						<span class="nav-text ml-2">SMS Stop</span>
+					</a>
+						<ul aria-expanded="false">
+							<li>
+								<a href="../10.SMSstop/10.1BulkSMSstop.html">
+									<img src="../images/Icon/Bulk%20SMS%20Stop.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Bulk SMS Stop</span>
+								</a>
+							</li>
+							<li>
+								<a href="../10.SMSstop/10.3Individualstop.html">
+									<img src="../images/Icon/Individual%20SMS%20Stop.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Individual SMS Stop</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li><a class=" ai-icon" aria-expanded="false" href="../11.Whitelist/11.1smslisting.html">
+						<img src="../images/Icon/SMS%20White%20List.svg" class="menu-icon">
+						<span class="nav-text ml-2">SMS White List</span>
+					</a>
+					</li>
+
+					<li><a class="has-arrow ai-icon " href="javascript:void()" aria-expanded="false">
+						<img src="../images/Icon/Report.svg" class="menu-icon" alt="">
+						<span class="nav-text ml-2">Report</span>
+					</a>
+						<ul aria-expanded="false">
+							<li>
+								<a href="../12.Report/12.1_SMS_Change_report/12.0_sms_channel.html">
+									<img src="../images/Icon/SMS%20Channel%20Change%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">SMS Channel Change Report</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.2_Other_SMS_Bulk/12.2.0_other_sms_channel_report.html">
+									<img src="../images/Icon/Other%20SMS%20Bulk%20File%20View.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Other SMS Bulk File View</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.3_On_Net/12.3.0_on-net-mmenu.html">
+									<img src="../images/Icon/On%20Net%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">On-Net Report</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.4_Off-net/12.4.0_off-net.html">
+									<img src="../images/Icon/Off%20Net%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Off-Net Report</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.5_Operator-Base-Report/12.5.0_operator-base-mmenu.html">
+									<img src="../images/Icon/Operator%20Base%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Operator Base Report</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.6_Company-Base-Report/12.6.0_company-base-mmenu.html">
+									<img src="../images/Icon/Company%20Base%20SMS%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Company Base Report</span>
+								</a>
+							</li>
+							<li>
+								<a href="../12.Report/12.7_Custom-sms-report/12.7.0_custom-sms-mmenu.html">
+									<img src="../images/Icon/Custom%20SMS%20Report.svg" class="menu-icon" alt="">
+									<span class=" ml-2">Custom SMS Report</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li><a class=" ai-icon" aria-expanded="false" href="../13.ChangePassword/13.changepass.html">
+						<img src="../images/Icon/Change Password.svg" class="menu-icon">
+						<span class="nav-text ml-2">Change Password</span>
+					</a>
+					</li>
+
+					<li><a class=" ai-icon" aria-expanded="false"  data-toggle="modal" data-target="#logoutFormModal">
+						<img src="../images/Icon/logout.png" class="menu-icon">
+						<span class="nav-text ml-2">Logout</span>
+					</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body  line-chart-body">
+			<div class="container-fluid">
+
+				<div class="row ">
+					<div class="col-xl-12 col-md-12">
+						<div class="card shadow net-dash p-1  bg-white rounded" >
+							<div class="row">
+								<div class="col-12">
+									<div class="row mt-3">
+										<div class="col-md-12">
+											<div class="form-head mb-sm-1 mt-2 d-flex flex-wrap align-items-center">
+												<h3 class="font-w600 title m-2 mr-auto "><nav aria-label="breadcrumb">
+													<ol class="breadcrumb font-weight-bold " style="background: none;" >
+														<li class="breadcrumb-item">
+															<a  href="dash_5.html">
+															   Share Cost Amount Company Base
+															</a>
+														</li>
+														<li class="breadcrumb-item">
+															<a >
+															   Custom>On-Net & Off-Net Operator Detail
+															</a>
+														</li>
+													</ol>
+												</nav></h3>
+												<div>
+													<i class="feather-calendar"></i>
+													<input type="text" id="calendar" class="shadow calendar-input" autocomplete="off" value="Select Period">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+                            <div  class="container line-chart mt-3 d-flex justify-content-start align-self-start" style="position: relative;padding-left: 0;">
+                                <canvas class="justify-content-center align-self-start " id="custombar-chart" style="height:400px;"></canvas>
+                                <ul class="">
+                                    <li style="color:#ed1b24"><i class="fas fa-circle mr-2 mb-5">OOREDOO</i></li>
+                                    <li style="color: #f9bb0e;"><i class="fas fa-circle mr-2 mb-5">MPT</i></li>
+                                    <li style="color: #ee6c20;"><i class="fas fa-circle mr-2 mb-5">MYTEL</i></li>
+                                    <li style="color: #05b8e3;"><i class="fas fa-circle mr-2 mb-5">TELENOR</i></li>
+                                    <li style="color: #3a7eed;"><i class="fas fa-circle mr-2 mb-5">MEC</i></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="operator-table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <td rowspan="2">Operator</td>
+                                        <td colspan="2"  style="color:#ed1b24"><i class="fas fa-circle mr-2 "></i>OOREDOO</td>
+                                        <td colspan="2"  style="color: #f9bb0e;"><i class="fas fa-circle mr-2 "></i>MPT</td>
+                                        <td colspan="2"  style="color: #ee6c20;"><i class="fas fa-circle mr-2 "></i>MYTEL</td>
+                                        <td colspan="2" style="color: #05b8e3;"><i class="fas fa-circle mr-2 "></i>TELENOR</td>
+                                        <td colspan="2" style="color: #3a7eed;"><i class="fas fa-circle mr-2 "></i>MEC</td>
+                                        <td>Total</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                        <td>On Net</td>
+                                        <td>Off Net</td>
+                                        <td>On Net</td>
+                                        <td>Off Net</td>
+                                        <td>On Net</td>
+                                        <td>Off Net</td>
+                                        <td>On Net</td>
+                                        <td>Off Net</td>
+                                        <td>On Net</td>
+                                        <td >Off Net</td>
+                                        <td rowspan="2">17,200,000</td>
+                                      </tr>
+                                      <tr>
+                                        <td >Amount</td>
+                                        <td>100,000</td>
+                                        <td>25,000</td>
+                                        <td>500,000</td>
+                                        <td>75,000</td>
+                                        <td>1,000,000</td>
+                                        <td>100,000</td>
+                                        <td>500,000</td>
+                                        <td>100,000</td>
+                                        <td>100,000</td>
+                                        <td>10,000</td>
+
+
+                                      </tr>
+                                      <tr>
+                                        <td >SMS Count</td>
+                                        <td>500</td>
+                                        <td>100</td>
+                                        <td>200</td>
+                                        <td>700</td>
+                                        <td>500</td>
+                                        <td>1,000</td>
+                                        <td>900</td>
+                                        <td>100</td>
+                                        <td>100</td>
+                                        <td>700</td>
+                                        <td>12,900</td>
+
+
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+
+
+        <!--**********************************
+            Content body end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Scripts
+    ***********************************-->
+	<script src="../vendor/global/global.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+	<script src="../js/moment.min.js"></script>
+	<script src="../js/daterangepicker.js"></script>
+
+	<script type="text/javascript" src="../vendor/multiselect/assests/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../vendor/multiselect/js/jquery.multiselect.js"></script>
+	<script type="text/javascript" src="../vendor/multiselect/js/jquery.multiselect.filter.js"></script>
+
+
+    <script src="../js/custom.min.js"></script>
+	<script src="../js/deznav-init.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="dash_js/chart-2.7.2.js"></script>
+
+
+<script>
+
+$('#calendar').daterangepicker({
+        autoUpdateInput: false,
+		  opens: 'center',
+		  maxDate: new Date(),
+          minDate: new Date('2/1/2022'),
+
+		  showDropdowns:true,
+
+		  drops:'down',
+		  locale: {
+			  format: 'ddd,DD-MMM-YYYY'
+		  },
+    },function (start,end,label){
+
+        $('#calendar').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('ddd,DD-MMM-YYYY') + ' - ' + picker.endDate.format('ddd,DD-MMM-YYYY'));
+        });
+
+        $('#calendar').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+        });
+
+
+        $('#start').text(start.format('ddd,DD-MMM-YYYY'))
+        $('#end').text(end.format('ddd,DD-MMM-YYYY'))
+    });
+
+  const ctx = document.getElementById('custombar-chart');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                        labels: ['On Net   Off Net','On Net   Off Net', 'On Net   Off Net','On Net   Off Net', 'On Net   Off Net'],
+                        datasets: [{
+                            label: 'On-Net,Total On Net & Offnet SMS Count',
+                            data: [100000,500000,1000000,500000,100000],
+                            backgroundColor: [
+
+                            "#ed1b24",
+
+                            "#f9bb0e",
+
+                            "#ee6c20",
+
+                            "#05b8e3",
+
+                            "#3a7eed"
+
+
+                            ],
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Off-Net,Total On Net & Offnet SMS Count',
+                            data: [25000,75000,100000,100000,10000],
+                            backgroundColor: [
+
+                            "#ed1b24",
+
+                            "#f9bb0e",
+
+                            "#ee6c20",
+
+                            "#05b8e3",
+
+                            "#3a7eed"
+
+
+                            ],
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    maintainAspectRatio:false,
+					tooltips:{
+						backgroundColor:'rgb(150,50,0)',
+					    callbacks:{
+							title:function(item,everything){
+								return;
+							}
+						}
+
+					},
+                    legend:{
+                        display:false
+                    },
+                    responsive:true,
+
+
+                    scales : {
+                            xAxes : [ {
+                                gridLines : {
+                                    display : false
+                                }
+                            } ]
+                        },
+
+
+
+                        title: {
+                            display: true,
+                            text: 'Amount',
+                            position:'top'
+
+                        }
+                       },
+
+
+            });
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
+    <meta name="format-detection" content="telephone=no">
+    <title> SMS MANAGEMENT </title>
+    <!-- Favicon icon -->
+    <link rel="stylesheet" href="../../vendor/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="../../vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/data_table.css">
+    <link rel="stylesheet" href="../../css/daterangepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.filter.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/prettify.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery-ui.css">
+
+    <link rel="stylesheet" href="../css/8.style.css">
+    <link href="../../css/back-bone.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--*******************
+    Preloader start
+********************-->
+<div id="preloader">
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+<!--*******************
+    Preloader end
+********************-->
+
+<!--**********************************
+    Main wrapper start
+***********************************-->
+<div id="main-wrapper">
+
+    <!--**********************************
+        Nav header start
+    ***********************************-->
+    <div class="nav-header">
+        <a href="../../index.html" class="brand-logo">
+            <h4>SMS MANAGEMENT</h4>
+        </a>
+
+
+    </div>
+    <!--**********************************
+        Nav header end
+    ***********************************-->
+
+    <!--**********************************
+        Header start
+    ***********************************-->
+    <div class="header">
+        <div class="header-content">
+            <nav class="navbar navbar-expand">
+                <div class="collapse navbar-collapse justify-content-lg-between menu-bar">
+                    <div class="nav-control">
+                        <div class="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <form method="get">
+                        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchright">
+                            <img class="simg " src="../../images/Icon/Search%20Icon.svg" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Search" >
+                        </label>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--Modal: modalConfirmDelete-->
+		 <div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		 aria-hidden="true">
+		 <div class="modal-dialog modal-dialog-centered  modal-notify modal-danger" role="document">
+		 <!--Content-->
+		 <div class="modal-content logoutModalContent text-center modal-success">
+			 <!--Body-->
+			 <div class="modal-body">
+				 <img src="../images/Icon/Search.svg" width="10%" alt="">
+				 <br><br><br>
+				 <h4 style="font-weight: bold;">Do you want to logout?</h4>
+				 <br><br>
+				 <div class="d-flex justify-content-center">
+
+					<a href="../../1.login_&_Forget/1.login.html"><button class="btn yes-btn mr-3">Yes</button></a>
+					<button class="btn no-btn ml-3" data-dismiss="modal" >No</button>
+
+				 </div>
+				 <br>
+			 </div>
+
+		 </div>
+		 <!--/.Content-->
+		 </div>
+	 	</div>
+
+
+    <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+    <!--**********************************
+        Sidebar start
+    ***********************************-->
+    <div class="deznav shadow">
+        <div class="deznav-scroll">
+            <div class="main-profile">
+                <a href="../../14.Profile/profile.html">
+                    <div class="image-bx">
+                        <img src="../../images/Icon/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="">
+                    </div>
+                    <h5 class="name"><span class="font-weight-bold">SMS Management Admin</span></h5>
+                </a>
+                <p class="email font-weight-bold">Last Login</p>
+                <div class="d-flex justify-content-between p-2 font-weight-bold">
+                    <div>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>Wed,04-Aug-2021</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-clock"></i>
+                        <span>04:50</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <ul class="metismenu" id="menu">
+                <li><a href="../../index.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/dashboard.png" class="menu-icon">
+                    <span class="nav-text ml-2">Dashboard</span>
+                </a>
+                </li>
+                <li class=" "><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/B Master.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">User Role Master</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li class="">
+                            <a href="../../Master/companylisting.html">
+                                <img src="../../images/Icon/B Company.svg" class="menu-icon" alt="">
+                                <span class=" ml-2 ">Company </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../Master/department_listing.html">
+                                <img src="../../images/Icon/B Department.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Department</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../Master/designationlisting.html">
+                                <img src="../../images/Icon/B Designation.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Designation</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class=""><a href="../../4.User-role/4.1_main-menu.html" class=" ai-icon " aria-expanded="false">
+                    <img src="../../images/Icon/User%20Role%20Permission.png" class="menu-icon">
+                    <span class="nav-text ml-2">User Role Permission</span>
+                </a>
+                </li>
+                <li><a class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/Set%20SMS%20Price.svg" class="menu-icon">
+                    <span class="nav-text ml-2">Set SMS Price</span>
+                </a>
+                </li>
+                <li><a class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20Channel%20Change.svg" class="menu-icon">
+                    <span class="nav-text ml-2">SMS Channel Change</span>
+                </a>
+                </li>
+                <li><a class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/OK$%20SMS%20Configuration.svg" class="menu-icon">
+                    <span class="nav-text ml-2">OK$ SMS Configuration</span>
+                </a>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Other%20SMS.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">Other SMS</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li >
+                            <a href="../8.1_Other_SMS/8.1.1_main_menu.html" ><img src="../../images/Icon/Send%20Other%20SMS.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Send Other SMS</span>
+                            </a>
+                        </li>
+                        <li class="mm-active">
+                            <a href="../8.2_Sugar_Mill/8.2.1_sugar-mill_mmenu.html" class="active-nav-link"><img src="../../images/active-icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                <span class="active-nav-link ml-2">Sugar Mill Factory </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../8.3_schedule_view_detail/8.3.0_schedule_view_listing.html"><img src="../../images/Icon/Schedule%20View%20Detail.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Schedule View Detail</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../8.4_custom_view_detail/8.4.0_custom_view_listing.html"><img src="../../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Custom View Detail</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Email.svg" class="menu-icon"></img>
+                    <span class="nav-text ml-2">Email</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="#">
+                                <img src="../../images/Icon/Email%20Configuration.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">E-mail Configuration</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/Icon/Individual%20E-mail.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Individual E-mail</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/Icon/Bulk%20Email.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Bulk E-mail</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20Stop.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">SMS Stop</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="#">
+                                <img src="../../images/Icon/Bulk%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Bulk SMS Stop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/Icon/Individual%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Individual SMS Stop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20White%20List.svg" class="menu-icon">
+                    <span class="nav-text ml-2">SMS White List</span>
+                </a>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Report.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">Report</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="../../12.Report/12.1_SMS_Change_report/12.0_sms_channel.html">
+                                <img src="../../images/Icon/SMS%20Channel%20Change%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">SMS Channel Change Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.2_Other_SMS_Bulk/12.2.0_other_sms_channel_report.html">
+                                <img src="../../images/Icon/Other%20SMS%20Bulk%20File%20View.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Other SMS Bulk File View</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.3_On_Net/12.3.0_on-net-mmenu.html">
+                                <img src="../../images/Icon/On%20Net%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">On-Net Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.4_Off-net/12.4.0_off-net.html">
+                                <img src="../../images/Icon/Off%20Net%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Off-Net Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.5_Operator-Base-Report/12.5.0_operator-base-mmenu.html">
+                                <img src="../../images/Icon/Operator%20Base%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Operator Base Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.6_Company-Base-Report/12.6.0_company-base-mmenu.html">
+                                <img src="../../images/Icon/Company%20Base%20SMS%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Company Base Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.7_Custom-sms-report/12.7.0_custom-sms-mmenu.html">
+                                <img src="../../images/Icon/Custom%20SMS%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Custom SMS Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/Change Password.svg" class="menu-icon">
+                    <span class="nav-text ml-2">Change Password</span>
+                </a>
+                </li>
+
+                <li><a class=" ai-icon" aria-expanded="false"  data-toggle="modal" data-target="#logoutFormModal">
+                    <img src="../../images/Icon/logout.png" class="menu-icon">
+                    <span class="nav-text ml-2">Logout</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--**********************************
+        Sidebar end
+    ***********************************-->
+
+    <!--**********************************
+        Content body start
+    ***********************************-->
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="form-head mb-sm-1 mt-2 d-flex flex-wrap align-items-center">
+                <h4 class="font-w600 title m-2 mr-auto ">
+                    Send Other SMS Configuration
+                </h4>
+            </div>
+            <div class="row py-2 col-12">
+                <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="mb-5 ">
+                        <p class="">Select User Type</p>
+                        <select value="View" id="user-type" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                            <option selected>Bulk</option>
+                            <option>Individual</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="mb-5 ">
+                        <p class="">Select SMS For Non OK$ Top-Up Operator</p>
+                        <select value="View" id="select-sms" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                            <option selected>MPT</option>
+                            <option selected>TELENOR</option>
+                            <option>OOREDOO</option>
+                            <option>MEC</option>
+                            <option>MYTEL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row d-flex justify-content-end align-items-center create-user">
+                <input accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                       class="btn btn-primary mr-3 " id="bulk-upload1"
+                       type="file">
+                <label class="bulk-upload mr-4" for="bulk-upload"><i class="fas fa-cloud-upload-alt mr-2"></i>
+                    Upload</label>
+                <button class="btn btn-primary " style="padding: 0.6rem 0;width: 150px;" type="button">
+                    <a class="text-decoration-none " href="../~$Sugar%20Mill%20Upload%20Sample.xlsx"><i
+                            class="fas fa-cloud-download-alt text-white"></i><span class="ml-2 text-white">Download Format</span></a>
+                </button>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 pb-5">
+                    <div class="table-responsive py-3 ">
+                        <table id="" class="table table-responsive text-nowrap">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 300px">File Reference Number</th>
+                                <th scope="col" style="width: 300px">File Name</th>
+                                <th scope="col">Mobile Number Count</th>
+                                <th scope="col">SMS in English</th>
+                                <th scope="col">SMS in Zawgyi</th>
+                                <th scope="col">SMS in Unicode</th>
+                                <th scope="col">Value Date & Time</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">View</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>File Name 1</td>
+                                <td>100</td>
+                                <td class="text-wrap">Hi Mingalar Par. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi eaque nihil perferendis sunt. ihil officiis quaerat quia quibusdam sunt veniam! </td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Fri,08-Jun-2021, 12:10:20</td>
+                                <td><p class="" id="processed">Processed</p></td>
+                                <td><a href="" class="text-decoration-none"><img class="edit-img" src="../../images/Icon/excel%20download%20.svg" alt=""></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row pb-3 d-flex justify-content-center">
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger mr-5 reset-btn" data-dismiss="modal"><a href="8.2.1_sugar-mill_mmenu.html" class="text-decoration-none text-white">CANCEL</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--**********************************
+                Content body end
+            ***********************************-->
+        </div>
+    </div>
+</div>
+
+<!--Send Now Modal -->
+<div class="modal fade " id="sendNowModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog sendNowModal modal-lg" role="document">
+        <div class="modal-content deModalContent">
+            <div class="modal-body" >
+                <br><br>
+                <div class="row">
+                    <img src="../img/mail-send.png" class="rounded mx-auto d-block " style="width: 50px"><br>
+                </div>
+                <br>
+                <div class="row ">
+                    <div class="col-12">
+                        <h4 style="text-align: center;">Message has been sent successfully!</h4>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of deModal -->
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../../vendor/global/global.min.js"></script>
+    <script src="../../js/popper.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../vendor/data_table/jquery.dataTables.min.js"></script>
+    <script src="../../vendor/data_table/dataTables.bootstrap4.min.js"></script>
+    <script src="../../js/fslightbox.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="../../vendor/multiselect/assests/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../vendor/multiselect/js/jquery.multiselect.js"></script>
+    <script type="text/javascript" src="../../vendor/multiselect/js/jquery.multiselect.filter.js"></script>
+
+
+    <script src="../../js/custom.min.js"></script>
+    <script src="../../js/deznav-init.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <script>
+
+
+        $("#select-sms").multiselect({}).multiselectfilter();
+        $("#user-type").multiselect({
+            multiple: false,
+            header:false
+        });
+
+        function changeComplete (){
+            let processedId = document.getElementById("processed")
+            processedId.innerHTML = "Completed";
+          processedId.className += " processed";
+        }
+        setInterval('changeComplete()',3000)
+
+
+        $(window).on('load', function() {
+            $('#sendNowModal').modal('show');
+        });
+
+        setTimeout(function () {
+            $('#sendNowModal').modal('hide');
+
+        }, 5000);
+
+    </script>
+
+</body>
+</html>

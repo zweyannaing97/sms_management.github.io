@@ -1,0 +1,163 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#otp-code{
+    width: 334px;
+    margin-left: 55px;
+    padding-left: 55px;
+    background-color: #bc842e;
+}
+#otp-code::placeholder{
+    color: #FFFFFF;
+}
+.form-group .otp{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 55px;
+    top: 35px;
+}
+.login-form-body{
+    opacity: .2 !important;
+}
+.otp-lock{
+    position: relative;
+    height: 34px;
+    padding: 3px;
+    background-color: #FFFFFF;
+    top: 36px;
+    left: 58px;
+    font-size: 20px;
+}
+.form-check-input{
+    display: none;
+}
+.form-check-input + label{
+    display: block;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.request-otp{
+    margin: auto;
+    width: 228px;
+}
+.submit-btn{
+    background: linear-gradient(#ebb22b, #ebd93d );
+}
+.submit-btn:hover{
+    border: 1px solid #eab222;
+    background: linear-gradient(#eab222, #e8d724);
+}
+.circle{
+    position: absolute;
+    top: 510px;
+    border: 4px solid #f5c700;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+
+    transform: rotateY(-180deg) rotateZ(-90deg);
+
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: white;
+    fill: none;
+}
+#countdown {
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+}
+
+#countdown-number {
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+    top: 540px;
+    position: absolute;
+    line-height: 40px;
+    z-index: 1;
+}
+
+small{
+    margin-left: 60px;
+}
+.circle {
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: white;
+    fill: none;
+    background-color: #FFFFFF;
+    animation: countdown 60s linear infinite forwards;
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0px;
+    }
+    to {
+        stroke-dashoffset: 113px;
+    }
+}
+
+@media screen and (max-width: 1551px){
+    .login-form-body{
+        padding: 20px;
+    }
+    .circle{
+        top: 395px;
+    }
+    #countdown-number{
+        top: 425px;
+    }
+    .otpExpire {
+        top: 343px;
+        left: 673px;
+    }
+}
+@media screen and (max-width: 780px){
+    .login-form-body{
+        padding: 20px;
+    }
+    .circle{
+        top: 515px;
+    }
+    #countdown-number{
+        top: 544px;
+    }
+    .otpExpire {
+        top: 461px;
+        left: 276px;
+    }
+}
+@media screen and (max-width: 415px){
+    .login-box{
+        padding: 0;
+    }
+    #otp-code {
+        width: 315px;
+        margin-left: 15px;
+    }
+    .otp-lock {
+        left: 17px;
+    }
+    small{
+        margin-left:5px;
+    }
+    .otpExpire {
+        top: 298px;
+        left: 92px;
+    }
+}

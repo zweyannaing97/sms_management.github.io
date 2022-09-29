@@ -1,0 +1,208 @@
+body{
+    overflow: scroll !important;
+}
+.container-fluid{
+    min-height: 800px !important;
+}
+.user-profile-img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+.nav-menu-icon{
+    width: 30px;
+}
+.active{
+    color: green;
+}
+.not-active{
+    color: red;
+}
+
+/********** 4.2_Create ************/
+input[type = file]::-webkit-file-upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.upload-photo-logo {
+    width: 25px;
+    font-size: 20px;
+    position: absolute;
+    top: 52px;
+    left: 325px;
+    z-index: 1;
+}
+.active-nav-link{
+    background-color: #fdf2ed;
+}
+.create-user .btn{
+    width: 120px;
+    border-radius: 25px;
+}
+.create-user .btn-update{
+    width: 120px !important;
+    border-radius: 25px !important;
+    background-color: #087d74 !important ;
+    color: #fff !important;
+}
+.create-user a{
+    color: #43230d !important;
+    font-weight: bolder;
+}
+.create-user .btn-primary{
+    background:#936317 ;
+    border: #f0f0f0;
+    color: #FFFFFF;
+}
+.create-user .btn-primary a{
+    color: #FFFFFF !important;
+}
+.create-user .btn-primary:hover,.btn-primary:active,.btn-primary:focus{
+    background-color: #946317 !important;
+    border: #f0f0f0;
+}
+.create-user .btn-danger{
+    background-color: #a30303;
+    border: #f0f0f0;
+}
+.create-user .btn-danger a{
+    color: white !important;
+}
+.create-user .btn-danger:hover,.btn-danger:active,.btn-danger:focus{
+    background-color: #a30303 !important;
+    border: #f0f0f0;
+}
+/********** End 4.2_Create ************/
+
+/********** 4.3_Update ************/
+#picker {
+    width: 80%;
+    height: 40px;
+    padding-right: 0;
+    padding-left: 35px;
+    margin-right: 0;
+}
+.calender-small {
+    position: absolute;
+    top: 53px;
+    left: 30px;
+}
+.modal-footer .btn-danger{
+    background-color: #f04e39;
+    width: 126px;
+    border-radius: 50px;
+}
+.modal-footer > .reset-btn:hover,.modal-footer .reset-btn:active,.modal-footer .reset-btn:focus{
+    background-color: #f04e39 !important;
+}
+.modal-footer .btn-primary{
+    background-color: #4c86c6;
+    width: 126px;
+    border-radius: 50px;
+    border: #4c86c6;
+}
+.modal-footer > .apply-btn:hover,.modal-footer .apply-btn:active,.modal-footer .apply-btn:focus{
+    background-color: #4c86c6 !important;
+}
+/*international phone*/
+
+.iti__flag{
+    display: none;
+}
+.iti--separate-dial-code .iti__selected-flag{
+    background-color: unset;
+    border-right: 1px solid #d9d2d2;
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 45px !important;
+    margin-left: 0;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+    color: #000;
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    left: 10px;
+}
+/*international phone*/
+
+.accCreateModal .modal-content, .accEditModal .modal-content{
+    width: 55% !important;
+    margin: 0px auto !important;
+    border-radius: 10px;
+    border: 5px solid #e0b54f;
+    height: 200px !important;
+}
+.accCreateModal .modal-body,.accEditModal .modal-content {
+    padding: 10px;
+    font-size: 15px;
+}
+/********** End 4.2_Create ************/
+/********** Content ***********/
+@media screen and (max-width: 1551px) {
+
+    .container-fluid{
+        min-height: 600px !important;
+    }
+
+    #user-role-table{
+        height: 500px;
+        text-align: center;
+        overflow: scroll;
+    }
+    .upload-photo-logo {
+        left: 280px;
+    }
+    .modal-content {
+        width: 84%;
+        margin-left: 230px;
+    }
+    .modal-body{
+        padding-top:0;
+        padding-bottom:0;
+    }
+    #picker {
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 780px) {
+    .upload-photo-logo {
+        left: 230px;
+    }
+    .modal-content {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .upload-photo-logo {
+        left: 250px;
+    }
+    .apply-btn,.reset-btn{
+        width: 100px !important;
+    }
+}
+
+.yes-btn{
+    width: 126px !important;
+    background-color:#946317  !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+.no-btn{
+    width: 126px !important;
+    background-color: #a30303 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.logoutmodal{
+    border-radius: 2.35rem !important;
+    width: 75% !important;
+    margin: auto !important;
+}

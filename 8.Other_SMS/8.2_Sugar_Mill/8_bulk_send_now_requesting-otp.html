@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login - srtdash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/metisMenu.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.min.css">
+    <!-- amchart css -->
+
+    <!-- others css -->
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/default-css.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../css/8.request-otp.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../build/css/intlTelInput.css">
+    <!-- modernizr css -->
+    <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- preloader area start -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<!-- preloader area end -->
+<!-- login area start -->
+<div class="login-area login-s2">
+    <div class="container login-form-container d-flex flex-column">
+        <div class="login-form-head pt-5">
+            <h1 class="text-white font-weight-bolder">SMS MANAGEMENT</h1>
+        </div>
+        <div class="login-box ptb--50">
+            <form class="login-form">
+                <div class="login-form-body d-flex justify-content-center">
+                    <span class="text-white" style="font-size: 18px">OTP Expires in</span>
+                </div>
+                <div id="countdown" class="d-flex justify-content-center align-content-center">
+                    <div id="countdown-number"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="otp form-group align-items-center">
+                    <img class="otp-lock" src="../img/otp-lock.png" alt="">
+                    <input type="number" id="otp-code"  class="form-control" placeholder="Enter OTP" required="required">
+                    <p class="txtsm">
+                        <small class="text-white">Enter OTP received via SMS on your registered mobile number</small>
+                    </p>
+                </div>
+                <div class="cancel-btn-area pb--15">
+                    <a href="8_bulk_send-now_receipt.html" class="text-decoration-none">
+                        <button id="" class="btn submit-btn" type="button">Submit</button>
+                    </a>
+                </div>
+                <div class="cancel-btn-area pb--15">
+                    <a href="8_bulk_send_now_request_otp.html" class="text-decoration-none">
+                        <button id="form_submit" class="btn btn-danger" type="button">Cancel</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- login area end -->
+
+<!-- jquery latest version -->
+<script src="../assets/js/vendor/jquery.js"></script>
+<!-- bootstrap 4 js -->
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/metisMenu.min.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/jquery.slicknav.min.js"></script>
+<script src="../../build/js/intlTelInput.js"></script>
+
+<!-- others plugins -->
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/scripts.js"></script>
+<script>
+
+    let countdownNumberEl = document.getElementById('countdown-number');
+    let countdown = 60;
+
+    countdownNumberEl.textContent = countdown;
+    console.log(countdown)
+
+    setInterval(function() {
+        countdown = --countdown <= 0 ? 60 : countdown;
+
+        countdownNumberEl.textContent = countdown;
+        setTimeout(function(){
+            window.location.replace("8_bulk_send_now_newotp.html");
+        },58500)
+
+    }, 1000);
+
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        initialCountry: "mm",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        separateDialCode: true,
+        utilsScript: "build/js/utils.js",
+    });
+    // document.onclick = function(){
+    //     var e = document.getElementById('wrong-password-message');
+    //     e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
+    // };
+</script>
+</body>
+
+</html>

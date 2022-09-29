@@ -1,0 +1,192 @@
+.change-pass-form .password{
+    margin-bottom: 60px;
+}
+
+.change-pass-form input{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    width: 40%;
+    border-bottom: #737374 1px solid !important;
+   
+}
+.change-pass-form input:focus{
+    box-shadow: none !important;
+   
+}
+
+.change-pass-form{
+    margin-left: 50px;
+}
+
+.btn-cancel{
+    background-color: #a30303 !important;
+    border-radius: 20px !important;
+    margin-right: 20px !important;
+    
+    width: 120px !important;
+    color: #fff !important;
+}
+.btn-cancel:hover{
+    background-color:#833939 !important  ;
+}
+
+
+.btn-change{
+
+    background-color: #0a7e73 !important;
+    border-radius: 20px !important;
+    margin-right: 20px !important;
+    
+    width: 120px !important;
+    color: #fff !important;
+
+}
+.btn-change:hover{
+    background-color:#128a7e !important;
+}
+
+span.border-passchange{
+    border-color: #ffb81c !important;
+  
+}
+
+@media screen and (max-width: 415px) {
+
+    .change-pass-form input{
+        width: 80%;
+
+    } 
+}
+
+
+.active-nav-link{
+    background-color: #fdf2ed !important;
+}
+
+.button {
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: #eff7f0;
+    font-size: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .button:hover {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 51px;
+    vertical-align: bottom;
+    margin-bottom: 25px;
+  }
+  
+  .searchbutton {
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .search:focus + .searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+  }
+  
+  .search {
+    position: absolute;
+    left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+  }
+  
+  .search:focus {
+    width: 150px !important;  /*Bar width+1px */
+    padding: 0 16px 0 0;
+    border-radius: 20px;
+  }
+  .expandright {
+    left: auto;
+    right: 10px !important; /* Button width-1px */
+    /*background: #eff7f0; */
+    box-shadow: 0 0 6px #ffb81c !important;
+  }
+  
+  .search-box{
+    border: 1px solid #ffb81c;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: .5s;
+  }
+  #search-lens{
+    transition: .5s;
+  }
+  .expandright:focus {
+    padding: 0 0 0 16px;
+  }
+  
+  .simg {
+    margin-bottom: 17px;
+    margin-left: 5px;
+    width: 25px;
+    transition: .5s;
+  }
+
+  @media screen and (max-width: 415px){
+
+    .nav-header h4 {
+        width: 145px !important;
+    }
+
+  }
+
+  .yes-btn{
+    width: 126px !important;
+    background-color:#946317  !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+.no-btn{
+    width: 126px !important;
+    background-color: #a30303 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.modal-success{
+  margin: 0px auto !important;
+  border-radius: 10px !important;
+  border: 5px solid #e0b54f !important;
+  
+
+  }

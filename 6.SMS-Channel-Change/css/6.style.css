@@ -1,0 +1,225 @@
+/**Start of Table*!*/
+#user-role-table{
+    height: 700px;
+    text-align: center;
+    overflow: scroll;
+}
+#user-role-table::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    direction: rtl;
+}
+#user-role-table::-webkit-scrollbar-track{
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#user-role-table::-webkit-scrollbar-thumb{
+    height: 300px;
+    border-radius: 50px;
+    background-color: #5b5650;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #5b5656;
+}
+.page-item.active .page-link {
+    background-color: #ffb81c;
+    border-color: #ffb81c;
+}
+.page-link{
+    border: none;
+    color: #000;
+}
+.page-item a:focus{
+    box-shadow: none;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #ffff;
+}
+.table th, .table td {
+    padding: 0.75rem 5.75rem;
+}
+
+/*End of Table*/
+.excelDownload{
+    width: 36%;
+}
+.addIcon{
+    width: 30%;
+}
+
+
+.imgDel {
+    cursor: pointer;
+}
+
+.imgDel:hover {
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+.cancelBtn {
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+    width: 120px;
+}
+.cancelBtn:hover
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.cancelBtn:active
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.cancelBtn:focus
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.saveBtn {
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+    border-radius: 25px;
+    width: 120px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+}
+.saveBtn:hover
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+.saveBtn:active
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+.saveBtn:focus
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+
+.cateogry option{
+    border: #5b5650;
+    line-height: 10px;
+    background: #5b5650;
+}
+.selectNormal {
+    border: none;
+    width: 100%;
+}
+  
+.selectNormal option { 
+    font-size: 15px;
+    border: none;
+    padding: 10px 0 10px 0;
+} 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    width: 75% !important;
+}
+.ui-widget-content {
+    width: 312px !important;
+}
+.ui-multiselect-filter input {
+    width: 87px;
+}
+
+footer{
+    background-color: #f7f7f7 !important;
+    padding-left: 0% !important;
+}
+#remarkArea{
+    width: 95% !important;
+}
+.nav-menu-icon{
+    width: 30px;
+}
+.container-fluid{
+    min-height: 800px;
+}
+/********** Content ***********/
+@media screen and (max-width: 1551px) {
+    #user-role-table{
+        height: 500px;
+        text-align: center;
+        overflow: scroll;
+    }
+    .table th, .table td {
+        padding: 0.75rem 2.75rem;
+    }
+    .container-fluid{
+        min-height: 630px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .excelDownload{
+        width: 26px !important;
+    }
+    .addIcon{
+        width: 25px !important;
+    }
+    .dataTables_info{
+        position: absolute;
+    }
+    .bottom{
+        display: flex !important;
+    }
+    .h3Text{
+        font-size: 18px;
+    }
+}
+
+.yes-btn{
+    width: 126px !important;
+    background-color:#946317  !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+.no-btn{
+    width: 126px !important;
+    background-color: #a30303 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.logoutmodal{
+    border-radius: 2.35rem !important;
+    width: 75% !important;
+    margin: auto !important;
+}
+

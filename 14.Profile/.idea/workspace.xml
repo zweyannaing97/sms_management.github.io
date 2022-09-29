@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d67be54-aad2-4a89-b3ce-6d408a00c3ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.1_initiated_transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.1_initiated_transaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.2_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.2_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.3_pre-process.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.3_pre-process.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.4_individual_compelete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.4_individual_compelete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.5_individual_pre-process-reject-etc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.5_individual_pre-process-reject-etc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/10.6_transaction_authorize.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/10.6_transaction_authorize.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/error-bulk-transaction-payment-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/error-bulk-transaction-payment-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.Transaction_details/individual-payment-listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../10.Transaction_details/individual-payment-listing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/1.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/1.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.DashA.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.DashA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.DashB.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.DashB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.DashC.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.DashC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.DashD.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.DashD.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/2.DashE.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/2.DashE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/3.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/3.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/4.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/4.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/4B.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/4B.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/4C.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/4C.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/5.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/5.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/5A.dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/5A.dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/5B.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/5B.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/5C.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/5C.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/6.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/6.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/7.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/7.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/7B.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/7B.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/7C.Dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/7C.Dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/line.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/line.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/maker_paymentamount.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/maker_paymentamount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Dashboard/maker_totalpayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3.Dashboard/maker_totalpayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.2_create_company_name.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.2_create_company_name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.3_edit_company_name.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.3_edit_company_name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.4_department_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.4_department_listing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.5_create_department.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.5_create_department.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.6_edit_department.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.6_edit_department.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.7_designation_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.7_designation_listing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.8_designation_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.8_designation_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.User_Role_Master/4.9_edit_designation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../4.User_Role_Master/4.9_edit_designation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5.User_Role_Permission/5.1_user_role.html" beforeDir="false" afterPath="$PROJECT_DIR$/../5.User_Role_Permission/5.1_user_role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5.User_Role_Permission/5.2_create_user_role.html" beforeDir="false" afterPath="$PROJECT_DIR$/../5.User_Role_Permission/5.2_create_user_role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5.User_Role_Permission/5.3_update_user_role.html" beforeDir="false" afterPath="$PROJECT_DIR$/../5.User_Role_Permission/5.3_update_user_role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/6.1.bulk_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/6.1.bulk_upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/6.2.bulk_file_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/6.2.bulk_file_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/single_bulk_payroll.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/single_bulk_payroll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6.bulk_transaction_payment/single_bulk_supplier_payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../6.bulk_transaction_payment/single_bulk_supplier_payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7.Individual_Payment/7.1_add_individual.html" beforeDir="false" afterPath="$PROJECT_DIR$/../7.Individual_Payment/7.1_add_individual.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7.Individual_Payment/7.2_individual_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../7.Individual_Payment/7.2_individual_listing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.Report/8.1.payrollreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/../8.Report/8.1.payrollreport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.Report/8.1.payrollview.html" beforeDir="false" afterPath="$PROJECT_DIR$/../8.Report/8.1.payrollview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.Report/8.2.supplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/../8.Report/8.2.supplier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.Report/8.2.supplierview.html" beforeDir="false" afterPath="$PROJECT_DIR$/../8.Report/8.2.supplierview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.Report/8.3.individual.html" beforeDir="false" afterPath="$PROJECT_DIR$/../8.Report/8.3.individual.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9.Change_Pswrd/9.change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/../9.Change_Pswrd/9.change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/main.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="25jWWFV8H5jiu9DrRuwriC0Sai9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d67be54-aad2-4a89-b3ce-6d408a00c3ad" name="Default Changelist" comment="" />
+      <created>1646041006100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646041006100</updated>
+      <workItem from="1646041007345" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

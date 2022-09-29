@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+/*-------------------- 1.Login ------------------- */
+body{
+    overflow: hidden;
+}
+.login-area {
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-box {
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.login-box form {
+    margin: auto;
+    width: 450px;
+    max-width: 100%;
+    background-image: radial-gradient(#e0b54f 40%, #9b5812 );
+    border-radius: 15px;
+}
+
+.login-form-head {
+    text-align: center;
+    padding: 10px;
+}
+
+.login-form-head h1 {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 60px;
+}
+
+.login-form-head p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.login-form-body {
+    padding: 50px;
+}
+
+.form-gp {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-gp label {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    color: #b3b2b2;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.form-gp.focused label {
+    top: -20px;
+    color: #FFFFFF;
+}
+
+.form-gp input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #97520d;
+    padding-left: 50px;
+    color: #FFFFFF;
+}
+
+.form-gp input::-webkit-input-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp input::-moz-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp input:-ms-input-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp input:-moz-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rmber-area {
+    font-size: 13px;
+}
+
+.submit-btn-area,.cancel-btn-area,.otp-btn-area,.reveal-otp-btn,.new-otp-btn-area {
+    text-align: center;
+}
+
+.submit-btn-area button {
+    width: 40%;
+    height: 50px;
+    border: 1px solid #fff;
+    background: #97520d;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.submit-btn-area button:hover {
+    background: #a7691c;
+    color: #fff;
+}
+
+.submit-btn-area button i {
+    margin-left: 15px;
+    -webkit-transition: margin-left 0.3s ease 0s;
+    transition: margin-left 0.3s ease 0s;
+}
+
+.submit-btn-area button:hover i {
+    margin-left: 20px;
+}
+
+.login-other a {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+}
+
+.login-other a i {
+    margin-left: 5px;
+}
+
+.login-other a.fb-login {
+    background: #8655FC;
+    color: #fff;
+}
+
+.login-other a.fb-login:hover {
+    box-shadow: 0 5px 15px rgba(44, 113, 218, 0.38);
+}
+
+.login-other a.google-login {
+    background: #fb5757;
+    color: #fff;
+}
+
+.login-other a.google-login:hover {
+    box-shadow: 0 5px 15px rgba(251, 87, 87, 0.38);
+}
+
+/* login-s2 */
+
+.login-s2 {
+    background: url(../images/bg/Background.jpg) center/cover no-repeat;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.login-s2 .login-form-head h4,
+.login-s2 .login-form-head p {
+    color: #444;
+}
+.form-icons i{
+    left: 10px;
+    font-size: 20px;
+}
+.form-icons{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+.login-form-container{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*-------------------- Wrong Password ------------------- */
+.wrong-password-message{
+    display: none;
+    width: 350px;
+    height: 150px;
+    background-color: #a7691c;
+}
+.reveal-wrong-message{
+    width: 350px;
+    height: 150px;
+    display: unset;
+    background-color: #a7691c;
+}
+.brown-color{
+    background-color:#a7691c ;
+}
+/*-------------------- Wrong Password ------------------- */
+
+/*-------------------- 2.Forget Pw CSS --------------------*/
+
+.form-gp-phone {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-gp-phone label {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    color: #b3b2b2;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.form-gp-phone.focused label {
+    top: -20px;
+    color: #FFFFFF;
+}
+
+.form-gp-phone input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #97520d;
+    padding-left: 50px;
+    color: #FFFFFF;
+}
+
+.form-gp-phone input::-webkit-input-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp-phone input::-moz-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp-phone input:-ms-input-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp-phone input:-moz-placeholder {
+    color: #dad7d7;
+}
+
+.form-gp-phone i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+.cancel-btn-area button {
+    width: 40%;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.otp-btn-area button {
+    display: none;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.new-otp-btn-area button {
+    width: 50%;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.req-otp-btn{
+    background:linear-gradient(#e0b54f, #9b5812 );
+}
+.reveal-otp-btn button{
+    display: unset;
+    z-index: 1;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background:linear-gradient(#e0b54f, #9b5812 );
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*-------------------- Forget Pw CSS --------------------*/
+
+@media screen and (max-width: 415px ){
+    .login-form-container{
+        align-items: unset;
+        justify-content: unset;
+    }
+    .login-form-head h1 {
+        font-size: 25px !important;
+    }
+}
+@media screen and (max-width: 780px ){
+    .login-form-head h1 {
+        font-size: 50px;
+    }
+}
+/*-------------------- END Login ------------------- */
+
+

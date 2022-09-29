@@ -1,0 +1,100 @@
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.time-picker2 {
+
+
+	width: 461px;
+	max-width: 448px;
+	padding: 25px 15px;
+
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 7px 9px 30px rgb(0 0 0 / 20%);
+
+	color: #000000;
+	font-size: 42px;
+	font-weight: 700;
+
+	user-select: none;
+}
+
+.time-picker2 .hour2,
+.time-picker2 .minute2,
+.time-picker2 .second2 {
+    border-radius: 25px;
+    border: 2px solid #424242;
+	position: relative;
+	min-width: 136px;
+	text-align: center;
+	display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+    height: 43px;
+}
+
+.time-picker2 .hour2 .hr2,
+.time-picker2 .minute2 .min2,
+.time-picker2 .second2 .sec2 {
+	background: none;
+	font-size: 18px;
+	appearance: none;
+	border: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: 'Saira', sans-serif;
+}
+
+.time-picker2 .hour2 .hr-up2,
+.time-picker2 .hour2 .hr-down2,
+.time-picker2 .minute2 .min-up2,
+.time-picker2 .minute2 .min-down2,
+.time-picker2 .second2 .sec-up2,
+.time-picker2 .second2 .sec-down2 {
+	position: absolute;
+	left: 80%;
+	transform: translateX(-10%);
+
+	height: 20px;
+
+	border-left: 6px solid transparent;
+    border-right: 7px solid transparent;
+
+	cursor: pointer;
+}
+
+.time-picker2 .hour2 .hr-up2,
+.time-picker2 .minute2 .min-up2,
+.time-picker2 .second2 .sec-up2 {
+	border-bottom: 7px solid #AAA;
+}
+
+.time-picker2 .hour2 .hr-down2,
+.time-picker2 .minute2 .min-down2,
+.time-picker2 .second2 .sec-down2 {
+	bottom: -3px;
+	border-top: 7px solid #AAA;
+}
+
+.time-picker2 .hour2 .hr-up2:hover,
+.time-picker2 .hour2 .hr-down2:hover,
+.time-picker2 .minute2 .min-up2:hover,
+.time-picker2 .minute2 .min-down2:hover,
+.time-picker2 .second2 .sec-up2:hover,
+.time-picker2 .second2 .sec-down2:hover {
+	border-bottom-color: #53565A;
+	border-top-color: #53565A;
+}
+.separator{
+	margin-top: -15px;
+}

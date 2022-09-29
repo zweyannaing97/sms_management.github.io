@@ -1,0 +1,400 @@
+body{
+    overflow-y: scroll !important;
+}
+.content-body{
+    min-height: unset !important;
+}
+.container-fluid{
+    min-height: 800px;
+}
+footer{
+    background-color: #f7f7f7 !important;
+    padding-left: 0% !important;
+}
+#remarkArea{
+    width: 100% !important;
+}
+.cancelBtn {
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+    width: 126px;
+
+}
+.cancelBtn:hover
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.cancelBtn:active
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.cancelBtn:focus
+{
+    color: #f0f7f0;
+    background: #a30303 !important;
+    background-color: #a30303 !important;
+    border-color: #a30303 !important;
+}
+.saveBtn {
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+    width: 126px;
+}
+.saveBtn:hover
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+.saveBtn:active
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+.saveBtn:focus
+{
+    color: #f0f7f0;
+    background: #936317 !important;
+    background-color: #936317 !important;
+    border-color: #936317 !important;
+}
+.sendBtn {
+    color: #f0f7f0;
+    background:  #025599 !important;
+    background-color:  #025599 !important;
+    border-color:  #025599 !important;
+    border-radius: 25px;
+    font-weight: 500;
+    width: 120px;
+}
+.sendBtn:hover
+{
+    color: #f0f7f0;
+    background:  #025599 !important;
+    background-color:  #025599 !important;
+    border-color:  #025599 !important;
+}
+.sendBtn:active
+{
+    color: #f0f7f0;
+    background:  #025599 !important;
+    background-color:  #025599 !important;
+    border-color: #025599  !important;
+}
+.sendBtn:focus
+{
+    color: #f0f7f0;
+    background:  #025599 !important;
+    background-color:  #025599 !important;
+    border-color: #025599  !important;
+}
+.ui-widget-content {
+    width: 389px !important;
+}
+.form-control {
+    width: 80%;
+}
+
+/* pretty radio */
+label.radioLabel > input[type="radio"] {
+    display: none;
+  }
+  label.radioLabel > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.25rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+  label.radioLabel > input[type="radio"]:checked + * {
+    color: #936317;
+  }
+  label.radioLabel > input[type="radio"]:checked + *::before {
+    background: radial-gradient(#936317 0%, #936317 40%, transparent 50%, transparent);
+    border-color: #936317;
+  }
+  
+  label.radioLabel > input[type="radio"] + * {
+    display: inline-block;
+  }
+
+.radioRowDisabled{
+    display: none;
+}
+
+.arsmall{
+    color:black ;
+    position: absolute;
+    top: 35px;
+    font-size: 22px;
+    left: 379px;
+}
+.calendar-arrow {
+    color: black;
+    position: absolute;
+    top: 35px;
+    font-size: 22px;
+    left: 370px;
+}
+.select1 .required::after{
+    padding: 5px 5px 0 0 !important;
+    content:"*";
+    color:red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.date_time .selectPeriod::after{
+    content:"*";
+    color:red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.daterangepicker td.start-date.end-date {
+    border-radius: 109px;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #2c3e4a;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #2c3e4a;
+    border-radius: 100px;
+}
+.daterangepicker .drp-buttons .btn {
+    border-radius: 10px;
+    background: #025599;
+}
+#picker{
+    margin: 0%;
+}
+.selectPeriod {
+    margin-bottom: 0%;
+}
+.footer{
+    margin: 0px;
+}
+
+.zawgyi{
+    font-family:Zawgyi-One;
+}
+.unicode{
+    font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
+}
+#popup {
+    padding: 5px;
+      width: 100%;
+      display: none;
+  }
+@media screen and (max-width: 1551px) {
+    .container-fluid{
+        min-height: 560px;
+    }
+    .arsmall {
+        left: 293px;
+    }
+    .inputWidth {
+        width: 85%;
+    }
+    .form-control{
+        width: 85%;
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        width: 85% !important;
+    }
+    .time-picker .hour, .time-picker .minute{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker{
+        width: 283px !important;
+        margin-left: 3px !important;
+    }
+    .time-picker2 .hour2, .time-picker2 .minute2{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker2{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+   
+    .time-picker3 .hour3, .time-picker3 .minute3{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker3{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+    .time-picker4 .hour4, .time-picker4 .minute4{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker4{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+    .separator {
+        margin-top: -12px !important;
+    }
+    .ui-widget-content {
+        width: 309px !important;
+    }
+    .yd-date-time {
+        font-size: 11px !important;
+    }
+    .calendar-arrow {
+        left: 275px !important;
+    }
+    .date-time3 {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 780px) {
+    .arsmall{
+        top: 37px;
+        left: 657px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        width: 100% !important;
+    }
+    .ui-widget-content {
+        width: 363px !important;
+    }
+    .time-picker .hour, .time-picker .minute {
+        min-width: 136px !important;
+    }
+    .time-picker{
+        width: 461px !important;
+    }
+    .time-picker2 .hour2, .time-picker2 .minute2 {
+        min-width: 136px !important;
+    }
+    .time-picker2{
+        width: 461px !important;
+    }
+    .time-picker3 .hour3, .time-picker3 .minute3 {
+        min-width: 136px !important;
+    }
+    .time-picker3{
+        width: 461px !important;
+    }
+    .time-picker4 .hour4, .time-picker4 .minute4 {
+        min-width: 136px !important;
+    }
+    .time-picker4{
+        width: 461px !important;
+    }
+    .yd-date-time {
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+    .calendar-arrow {
+        left: 658px !important;
+    }
+}
+@media screen and (max-width: 415px) {
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        width: 100% !important;
+    }
+    .ui-widget-content {
+        width: 311px !important;
+    }
+    .radRow{
+        padding: 0%;
+    }
+    .time-picker .hour, .time-picker .minute{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker{
+        width: 283px !important;
+        margin-left: 3px !important;
+    }
+    .time-picker2 .hour2, .time-picker2 .minute2{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker2{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+    .time-picker3 .hour3, .time-picker3 .minute3{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker3{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+    .time-picker4 .hour4, .time-picker4 .minute4{
+        width: 38% !important;
+        min-width: 110px !important;
+    }
+    .time-picker4{
+        width: 285px !important;
+        margin-left: 6.9px !important;
+    }
+    .yd-date-time {
+        font-size: 12px !important;
+    }
+    .calendar-arrow {
+        left: 296px !important;
+    }
+    .date-time3 {
+        font-size: 16px !important;
+    }
+}
+
+.yes-btn{
+    width: 126px !important;
+    background-color:#946317  !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+.no-btn{
+    width: 126px !important;
+    background-color: #a30303 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.logoutmodal{
+    border-radius: 2.35rem !important;
+    width: 75% !important;
+    margin: auto !important;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    top: 64px !important;
+}
+.yd-date-time {
+    width: 80%;
+}

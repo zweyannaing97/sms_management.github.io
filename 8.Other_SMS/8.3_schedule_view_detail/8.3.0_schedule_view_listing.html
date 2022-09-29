@@ -1,0 +1,3130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta property="og:image" content="https://zenix.dexignzone.com/xhtml/social-image.png">
+    <meta name="format-detection" content="telephone=no">
+    <title> SMS MANAGEMENT </title>
+    <!-- Favicon icon -->
+    <link rel="stylesheet" href="../../vendor/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="../../vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/data_table.css">
+    <link rel="stylesheet" href="../../css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.filter.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/prettify.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery.multiselect.filter.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/prettify.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/multiselect/assests/jquery-ui.css">
+
+    <link href="../../css/datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+
+    <link href="../../css/back-bone.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/8.style.css">
+
+</head>
+<body>
+
+<!--*******************
+    Preloader start
+********************-->
+<div id="preloader">
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+<!--*******************
+    Preloader end
+********************-->
+
+<!--**********************************
+    Main wrapper start
+***********************************-->
+<div id="main-wrapper">
+
+    <!--**********************************
+        Nav header start
+    ***********************************-->
+    <div class="nav-header">
+        <a href="../../index.html" class="brand-logo">
+            <h4>SMS MANAGEMENT</h4>
+        </a>
+
+
+    </div>
+    <!--**********************************
+        Nav header end
+    ***********************************-->
+
+    <!--**********************************
+        Header start
+    ***********************************-->
+    <div class="header">
+        <div class="header-content">
+            <nav class="navbar navbar-expand">
+                <div class="collapse navbar-collapse justify-content-lg-between menu-bar">
+                    <div class="nav-control">
+                        <div class="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <form method="get">
+                        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchright">
+                            <img class="simg " src="../../images/Icon/Search%20Icon.svg" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Search" >
+                        </label>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+      <!--Modal: modalConfirmDelete-->
+		 <div class="modal fade" id="logoutFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		 aria-hidden="true">
+		 <div class="modal-dialog modal-dialog-centered  modal-notify modal-danger" role="document">
+		 <!--Content-->
+		 <div class="modal-content logoutModalContent text-center modal-success ">
+			 <!--Body-->
+			 <div class="modal-body">
+				 <img src="../../images/Icon/Search.svg" width="10%" alt="">
+				 <br><br><br>
+				 <h4 style="font-weight: bold;">Do you want to logout?</h4>
+				 <br><br>
+				 <div class="d-flex justify-content-center">
+
+					<a href="../../1.login_&_Forget/1.login.html"><button class="btn yes-btn mr-3">Yes</button></a>
+					<button class="btn no-btn ml-3" data-dismiss="modal" >No</button>
+
+				 </div>
+				 <br>
+			 </div>
+
+		 </div>
+		 <!--/.Content-->
+		 </div>
+	 	</div>
+
+    <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+    <!--**********************************
+        Sidebar start
+    ***********************************-->
+    <div class="deznav shadow">
+        <div class="deznav-scroll">
+            <div class="main-profile">
+                <a href="../../14.Profile/profile.html">
+                    <div class="image-bx">
+                        <img src="../../images/Icon/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="">
+                    </div>
+                    <h5 class="name"><span class="font-weight-bold">SMS Management Admin</span></h5>
+                </a>
+                <p class="email font-weight-bold">Last Login</p>
+                <div class="d-flex justify-content-between p-2 font-weight-bold">
+                    <div>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>Wed,04-Aug-2021</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-clock"></i>
+                        <span>04:50</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <ul class="metismenu" id="menu">
+                <li><a href="../../index.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/dashboard.png" class="menu-icon">
+                    <span class="nav-text ml-2">Dashboard</span>
+                </a>
+                </li>
+                <li class=" "><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/B Master.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">User Role Master</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li class="">
+                            <a href="../../Master/companylisting.html">
+                                <img src="../../images/Icon/B Company.svg" class="menu-icon" alt="">
+                                <span class=" ml-2 ">Company </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../Master/department_listing.html">
+                                <img src="../../images/Icon/B Department.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Department</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../Master/designationlisting.html">
+                                <img src="../../images/Icon/B Designation.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Designation</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="../../4.User-role/4.1_main-menu.html" class="ai-icon " aria-expanded="false">
+                    <img src="../../images/Icon/User%20Role%20Permission.png" class="menu-icon">
+                    <span class="nav-text ml-2">User Role Permission</span>
+                </a>
+                </li>
+                <li><a href="../../5.Set%20-SMS-Price/5.1.set-sms-price.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/Set%20SMS%20Price.svg" class="menu-icon">
+                    <span class="nav-text ml-2">Set SMS Price</span>
+                </a>
+                </li>
+                <li><a href="../../6.SMS-Channel-Change/6.1.sms-channel-change-listing.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20Channel%20Change.svg" class="menu-icon">
+                    <span class="nav-text ml-2">SMS Channel Change</span>
+                </a>
+                </li>
+                <li><a href="../../7.OK%20$%20SMS%20Configuration/7.1.ok$-sms-configuration.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/OK$%20SMS%20Configuration.svg" class="menu-icon">
+                    <span class="nav-text ml-2">OK$ SMS Configuration</span>
+                </a>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Other%20SMS.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">Other SMS</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="../8.1_Other_SMS/8.1.1_main_menu.html"><img src="../../images/Icon/Send%20Other%20SMS.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Send Other SMS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../8.2_Sugar_Mill/8.2.1_sugar-mill_mmenu.html"><img src="../../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Sugar Mill Factory </span>
+                            </a>
+                        </li>
+                        <li class="mm-active">
+                            <a href="../8.3_schedule_view_detail/8.3.0_schedule_view_listing.html" class="active-nav-link"><img src="../../images/active-icon/Schedule%20View%20Detail.svg" class="menu-icon" alt="">
+                                <span class="active-nav-link ml-2">Schedule View Detail</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../8.4_custom_view_detail/8.4.0_custom_view_listing.html"><img src="../../images/Icon/Sugar%20Mill%20Factory.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Custom View Detail</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Email.svg" class="menu-icon"></img>
+                    <span class="nav-text ml-2">Email</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="../../9.Email/9.1.email_configuration_listing.html">
+                                <img src="../../images/Icon/Email%20Configuration.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">E-mail Configuration</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../9.Email/9.4.indiviual_email_listing.html">
+                                <img src="../../images/Icon/Individual%20E-mail.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Individual E-mail</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../9.Email/9.6.bulk_email_listing.html">
+                                <img src="../../images/Icon/Bulk%20Email.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Bulk E-mail</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20Stop.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">SMS Stop</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="../../10.SMSstop/10.1BulkSMSstop.html">
+                                <img src="../../images/Icon/Bulk%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Bulk SMS Stop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../10.SMSstop/10.3Individualstop.html">
+                                <img src="../../images/Icon/Individual%20SMS%20Stop.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Individual SMS Stop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../../11.Whitelist/11.1smslisting.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/SMS%20White%20List.svg" class="menu-icon">
+                    <span class="nav-text ml-2">SMS White List</span>
+                </a>
+                </li>
+
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <img src="../../images/Icon/Report.svg" class="menu-icon" alt="">
+                    <span class="nav-text ml-2">Report</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="../../12.Report/12.1_SMS_Change_report/12.0_sms_channel.html">
+                                <img src="../../images/Icon/SMS%20Channel%20Change%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">SMS Channel Change Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.2_Other_SMS_Bulk/12.2.0_other_sms_channel_report.html">
+                                <img src="../../images/Icon/Other%20SMS%20Bulk%20File%20View.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Other SMS Bulk File View</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.3_On_Net/12.3.0_on-net-mmenu.html">
+                                <img src="../../images/Icon/On%20Net%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">On-Net Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.4_Off-net/12.4.0_off-net.html">
+                                <img src="../../images/Icon/Off%20Net%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Off-Net Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.5_Operator-Base-Report/12.5.0_operator-base-mmenu.html">
+                                <img src="../../images/Icon/Operator%20Base%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Operator Base Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.6_Company-Base-Report/12.6.0_company-base-mmenu.html">
+                                <img src="../../images/Icon/Company%20Base%20SMS%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Company Base Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../12.Report/12.7_Custom-sms-report/12.7.0_custom-sms-mmenu.html">
+                                <img src="../../images/Icon/Custom%20SMS%20Report.svg" class="menu-icon" alt="">
+                                <span class=" ml-2">Custom SMS Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../../13.ChangePassword/13.changepass.html" class=" ai-icon" aria-expanded="false">
+                    <img src="../../images/Icon/Change Password.svg" class="menu-icon">
+                    <span class="nav-text ml-2">Change Password</span>
+                </a>
+                </li>
+
+                <li><a class=" ai-icon" aria-expanded="false"  data-toggle="modal" data-target="#logoutFormModal">
+                    <img src="../../images/Icon/logout.png" class="menu-icon">
+                    <span class="nav-text ml-2">Logout</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--**********************************
+        Sidebar end
+    ***********************************-->
+
+    <!--**********************************
+        Content body start
+    ***********************************-->
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="form-head mb-sm-3 m-3 d-flex flex-wrap align-items-center">
+                <h4 class="font-w600 title m-2 mr-auto ">Schedule View Detail Listing</h4>
+                <div>
+                    <a href="#"><img class="nav-menu-icon filter-btn" data-toggle="modal" data-target="#staticBackdrop" src="../../images/active-icon/Filter.svg" alt="" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Filter"></a>
+                    <a href=""><img class="nav-menu-icon" src="../../images/active-icon/excel%20download%20.svg" alt="" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Download"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive py-3 ">
+                        <table id="user-role-table" class="table table-responsive text-nowrap">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 300px">File Reference No</th>
+                                <th scope="col" style="width: 300px">File Name</th>
+                                <th scope="col">Company Name</th>
+                                <th scope="col">Operator</th>
+                                <th scope="col">User Type</th>
+                                <th scope="col">Mobile Number (or) Count</th>
+                                <th scope="col">SMS in English</th>
+                                <th scope="col">SMS in Zawgyi</th>
+                                <th scope="col">SMS in Unicode</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Frequency Count</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Start Time</th>
+                                <th scope="col">End Time</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap text-center">sdfdf dsfdsf sdfdsf dsfds  dsfds</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Other</td>
+                                <td>MPT</td>
+                                <td>Non OK$ TopUp Customer</td>
+                                <td>+95 09452154897</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Daily</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td class="text-danger">Error</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Telenor</td>
+                                <td>Bulk</td>
+                                <td>20</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>6</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td style="text-decoration: underline" class="file-type">File Name 1</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>Ooredoo</td>
+                                <td>Individual</td>
+                                <td>+95 09975656413</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Weekly</td>
+                                <td>5</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            <tr>
+                                <td>2021080641104528</td>
+                                <td>-</td>
+                                <td>Sugar Mill Factory</td>
+                                <td>MEC</td>
+                                <td>Individual Customer Mobile No</td>
+                                <td>+95 095158697</td>
+                                <td class="text-wrap">Hi,Mingalar Par.</td>
+                                <td class="text-wrap">ဟိုင္း မဂၤလာပါ</td>
+                                <td class="text-wrap">ဟိုင်း မင်္ဂလာပါ</td>
+                                <td>Monthly</td>
+                                <td>3</td>
+                                <td>Fri,12-Jun-2021</td>
+                                <td>Mon,23-Jan-2021</td>
+                                <td> 09:10:20</td>
+                                <td> 07:45:28</td>
+                                <td>Pre Processed</td>
+                                <td><a href="" data-toggle="modal" data-target="#staticBackdrop1"><img class="edit-img" src="../../images/Icon/Edit%20Pattern.svg" alt=""></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**********************************
+        Content body end
+    ***********************************-->
+</div>
+
+<!--			Modal Filter-->
+<div class="modal fade .modal-lg " id="staticBackdrop" data-backdrop="static" data-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header mb-3">
+                <h3 class="modal-title text-white" id="staticBackdropLabel">Filter</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="close-filter" aria-hidden="true"><img src="../../images/img/x.svg" alt=""></i></span>
+                </button>
+            </div>
+            <div class="modal-body pt-3">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div class="date_time container mb-3 p-0"  >
+                            <p class="">Select Period Date</p>
+                            <i class="far fa-calendar calender-small"></i>
+                            <input type="text" id="picker" class="form-control bg-light"  value="" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mrow">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div class="mb-5 ">
+                            <p class="">Company Name</p>
+                            <select value="View" id="user-name" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                <option>Aye</option>
+                                <option>Hla Hla</option>
+                                <option>Mg Mg</option>
+                                <option>Mya Mya</option>
+                                <option>Aye</option>
+                                <option>Hla Hla</option>
+                                <option>Mg Mg</option>
+                                <option>Mya Mya</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div class="mb-5 ">
+                            <p class="">Operator</p>
+                            <select value="View" id="department-name" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                <option>MPT</option>
+                                <option>Telenor</option>
+                                <option>Ooredoo</option>
+                                <option>Mytel</option>
+                                <option>MEC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div class="mb-5 ">
+                            <p class=""> User Type</p>
+                            <select value="View" id="designation" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                <option>Aye</option>
+                                <option>Hla Hla</option>
+                                <option>Mg Mg</option>
+                                <option>Mya Mya</option>
+                                <option>Aye</option>
+                                <option>Hla Hla</option>
+                                <option>Mg Mg</option>
+                                <option>Mya Mya</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-danger mr-5 reset-btn" data-dismiss="modal">Reset</button>
+                <button type="button" class="btn btn-primary apply-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--			Modal Filter-->
+<div class="modal fade .modal-lg " id="staticBackdrop1" data-backdrop="static"  data-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl ">
+        <div class="modal-content">
+            <div class="modal-body pt-3">
+                <div class="row py-2 col-12">
+                    <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="mb-5 ">
+                            <p class="">Select SMS Send Type</p>
+                            <select  onchange="smsTypeChange()" id="user-type-one" class="multiselect-role-permission" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                <option>Bulk</option>
+                                <option selected>Individual</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="individual" >
+                    <div class="row py-2 col-12 align-items-center " >
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="mb-5">
+                                <p class="">Mobile Number</p>
+                                <input readonly class="dpmnt-name form-control bg-light" value="+95 09452154897"  type="text" placeholder="Enter Mobile Number" style="width: 80%">
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4 pl-0">
+                            <!--                    ******* If valid ********-->
+                            <div class="  ">
+                                <div class="d-flex align-items-center">
+                                    <div class="pt-3 pl-0">
+                                        <img class="delete-can" src="../../images/Icon/Delete%20Icon.png" alt="">
+                                    </div>
+                                    <div class="pl-5">
+                                        <div>
+                                            <p>Operator Name</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <div><i class="fa fa-check-circle text-success" style="font-size: 25px"></i></div>
+                                            <div><p class="text-black">MPT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                    ******* End If valid ********-->
+
+                        </div>
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4 d-flex flex-column align-items-end ">
+                            <div class="btn btn-primary " id="add-mobile-numbers">
+                                <img class="edit-img" src="../../images/Icon/Add%20pattern.svg" alt="">
+                                <span class="text-black">Add</span>
+                            </div>
+                            <span class="text-danger required1">(Maximum Allow 5 Mobile Numbers)</span>
+                        </div>
+                    </div>
+                    <div id="add-mobile-row" class="row py-2 col-12 align-items-center">
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="mb-5">
+                                <p class="">Mobile Number</p>
+                                <input readonly class="dpmnt-name form-control bg-light"  value="+95 092685943257" type="text" placeholder="Enter Mobile Number" style="width: 80%">
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4 pl-0">
+                            <!--                    ******* If valid ********-->
+                            <div class="  ">
+                                <div class="d-flex align-items-center">
+                                    <div class="pt-3 pl-0">
+                                        <img class="delete-can" src="../../images/Icon/Delete%20Icon.png" alt="">
+                                    </div>
+                                    <div class="pl-5">
+                                        <div>
+                                            <p>Operator Name</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <div><i class="fa fa-check-circle text-success" style="font-size: 25px"></i></div>
+                                            <div><p class="text-black">MPT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row py-3 mx-1">
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="form-group">
+                                <label for="remarkArea">SMS in English</label>
+                                <textarea readonly class="form-control text-area shadow p-2 mb-2  bg-white" placeholder="Enter SMS in English" id="mesArea1" rows="8" style="border-radius: 20px;" maxlength="160">sdfdf dsfdsf sdfdsf dsfds dsfds</textarea>
+                                <p class="mx-2" id="textCount1"></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="form-group">
+                                <label for="remarkArea">SMS in Zawgyi</label>
+                                <textarea readonly class="form-control text-area shadow p-2 mb-2 bg-white zawgyi" placeholder="Enter SMS in Zawgyi" id="mesArea2" rows="8" style="border-radius: 20px;" maxlength="160">ဟိုင္း မဂၤလာပါ</textarea>
+                                <p class="mx-2" id="textCount2"></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="form-group ">
+                                <label for="remarkArea">SMS in Unicode</label>
+                                <textarea readonly class="unicode form-control text-area  p-2 mb-2 bg-white" placeholder="Enter SMS in Unicode" id="mesArea3" rows="8" style="border-radius: 20px;" maxlength="160">ဟိုင်း မင်္ဂလာပါ</textarea>
+                                <p class="mx-2" id="textCount3"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3 mx-1">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="remarkArea">Remarks</label>
+                                <textarea readonly class="form-control shadow p-2 mb-2 bg-white" id="remarkArea" rows="1" style="border-radius: 50px;width: 90%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row py3 mx-1" style=" font-size: 16px; font-weight: 1000000;">
+                                <div class="col-md-3">
+                                    <label class="radioLabel">
+                                        <input type="radio" name="radio-button" onclick="sendRadio()" value="css"  disabled />
+                                        <span >Send Now</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="radioLabel">
+                                        <input id="sRadio" name="radio-button" onclick="schRadio()" type="radio" checked
+                                               value="no"/>                                        <span>Schedule</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="radioLabel">
+                                        <input type="radio" name="radio-button"  onclick="cusRadio()" value="no" id="cRadio" disabled />
+                                        <span>Custom</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+
+                            <div class="row mx-1 mt-3 radioRowDisabled" id="showScheduleRadio">
+
+                            </div>
+
+                            <div class="row  mx-1 " id="showScheduleRadio2">
+
+                                <div class="col-xl-4 col-md-12">
+                                    <p class="required" style="margin-bottom: 5px;">Select Frequency</p>
+                                    <select disabled value="View" id="frequency" style="border-radius: 50px;" class="multiselect-role-permission shadow p-3 mb-2 bg-white rounded" multiple="multiple" data-selected-text-format="count" data-live-search="true">
+                                        <option value="0" >Daily</option>
+                                        <option selected value="0" >Weekly</option>
+                                        <option value="0" >Monthly</option>
+                                        <option value="0" >Quarterly</option>
+                                        <option value="0" >Half-Yearly</option>
+                                        <option value="0" >Yearly</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-4 col-md-12">
+                                    <div class=" mb-5" >
+                                        <p class="selectPeriod required">Select Start Date & Time  </p>
+                                        <i class="fas fa-angle-down arsmall-two"></i>
+                                        <input readonly name="from-to" type="text" id="datetimepicker1"  class="form-control  p-3  bg-white"   aria-labelledby="Select" placeholder="Select">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-12">
+                                    <div class="" >
+                                        <p class="selectPeriod required">Select End Date & Time  </p>
+                                        <i class="fas fa-angle-down arsmall-two"></i>
+                                        <input readonly name="from-to" type="text" id="datetimepicker2"  class="form-control  p-3  bg-white"   aria-labelledby="Select" placeholder="Select">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 select1">
+                                <p class="required" style="margin-bottom: 5px;">Frequency Count </p>
+                                <div class="form-group">
+                                    <input readonly type="text" class="form-control" id="frequecyCount" value="5"  placeholder="Enter Value">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!--**********************************
+                            Content body end
+                        ***********************************-->
+
+                    </div>
+
+                    <footer class="footer mx-auto"  id="sendNowBtn">
+                        <div class="row my-4 d-flex justify-content-center align-items-center create-user">
+                            <div class="modal-footer1 d-flex justify-content-center">
+                                <button type="button" class="btn  mr-5 back-btn" data-dismiss="modal">Back</button>
+                                <button type="button" class="btn  remove-btn"><a href="8_bulk_send_now_requesting-otp.html" class="text-decoration-none text-white">Delete</a></button>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <footer class="footer mx-auto radioRowDisabled"  id="saveBtn">
+                        <div class="row my-4 d-flex justify-content-center align-items-center create-user">
+                            <div class="modal-footer1 d-flex justify-content-center">
+                                <button type="button" class="btn btn-danger mr-5 reset-btn" data-dismiss="modal">Back</button>
+                                <button type="button" class="btn btn-primary apply-btn"><a href="8_bulk_send_now_requesting-otp.html" class="text-decoration-none text-white">REMOVE</a></button>
+                            </div>
+                        </div>
+
+                    <!--**********************************
+                        Content body end
+                    ***********************************-->
+                    </footer>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="../../vendor/global/global.min.js"></script>
+<script src="../../js/popper.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../vendor/data_table/jquery.dataTables.min.js"></script>
+<script src="../../vendor/data_table/dataTables.bootstrap4.min.js"></script>
+<script src="../../js/moment.min.js"></script>
+<script src="../../js/daterangepicker.js"></script>
+
+<script type="text/javascript" src="../../vendor/multiselect/assests/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../vendor/multiselect/js/jquery.multiselect.js"></script>
+<script type="text/javascript" src="../../vendor/multiselect/js/jquery.multiselect.filter.js"></script>
+
+<script src="../../js/datetimepicker.js"></script>
+<script src="../../js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="../../js/custom.min.js"></script>
+<script src="../../js/deznav-init.js"></script>
+<script src="../../js/main.js"></script>
+
+<script>
+
+
+    $("#user-name").multiselect().multiselectfilter({
+        label:false
+    });
+    $("#department-name").multiselect();
+    $("#designation").multiselect().multiselectfilter({
+        label:false
+    });
+
+    $("#user-type-one").multiselect({
+        multiple: false,
+        header:false
+    });
+    $("#frequency").multiselect({
+        multiple: false,
+        header:false
+    });
+</script>
+
+</body>
+</html>
